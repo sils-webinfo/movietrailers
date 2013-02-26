@@ -1,5 +1,46 @@
 This service provides a list of movie-trailers, actors, and subjects. Example data has been added to provide a clearer understanding.
 
+Key:
+*all-movie-trailers.html is the entry point to the service. Here one will be able to see a list of 
+all movie trailers on the site through a set of outbound links that link to the individual movie trailer page. (URI /movie-trailers)
+
+*all-actors.html is where one will see a set of outbound links that link to the individual actor page. (URI /actors)
+
+*all-subjects.html is where one will see a set of outbound links that link to the individual subject page. (URI /subjects)
+
+*movie-trailer.html is an example of how a particular movie trailer page might look like. Here an example of Lion King was used to demonstrate. 
+This page contains outbound links that will connect one back to the list pages for movie-trailers, actors, and subjects. (URI /movie-trailers/{movie-id})
+
+*actors.html is an example of how a particular actor page might look like. This page contains outbound links
+This page contains outbound links that will connect one back to the list pages for movie-trailers, actors, and subjects. (URI /actors/{actor/actress-id})
+
+*subjects.html is an example how a particular subject page might look like. This page contains outbound links
+This page contains outbound links that will connect one back to the list pages for movie-trailers, actors, and subjects. (URI/subjects/subject/{subject-id})
+
+*timeresult.html is an example of how a page will look like if someone requests in the a particular time. It will look
+almost exactly the same as the movie-trailer individual page, except that the video will start at a specified time. URI (URI/movie-trailers/{movie-id}#t={ms })
+
+*titlesearchresults.html is an example of how the search results might look like if someone searches for a movie-trailer via the title. (URI/titlesearch?titlename={query})
+
+*actorssearchresults.html is an example how the search results might look like if someone searches for an actor/actress by name. (URI/actorsearch?actornamename={query})
+
+*subjectsearchresults.html is an example of how the search results might look like if someone searches by subject name. (URI/subjectsearch?subjectname={query})
+
+*createdresponsemovie.html is an example of what the response might look like when one creates movie-trailer URI.
+
+*createdresponseactor.html is an example of what the response might look like when one creates a new actor resource.
+
+*createdresponsesubject.html is an example of what the response might look like when one creates a subject resource.
+
+*updatedresourcemovie.html is an example of what the response might look like when one updates a movie-trailer.
+
+*updatedresourceactor.html is an example of what the response might look like when one updates an actor resource.
+
+*updatedresourcesubject.html is an example of what the response might look like when one updates a subject resource.
+
+
+
+
 ID Attribute Values
 Queries is an id that represents areas (forms) where search queries can be conducted. 
 Found in:
