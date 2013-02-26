@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> All Actors Example </title>
+</head>
+
+<body>
+
+<h1> A List of all Actors</h1>
+
+<ul class="actor-list">
+<li> <a href="http://www.example.com/actors/{actor-id}"> Alladin </a></li>
+<li> <a href="http://www.example.com/actors/{actor-id}"> Bell </a></li>
+<li> <a href="http://www.example.com/actors/{actor-id}"> Mufasa </a></li>
+<li> <a href="http://www.example.com/actors/{actor-id}"> Rafeeki </a></li>
+</ul>
+
+<div id="queries" >
+<h3> Search for an Actor by name </h3>
+<form method = "get" action = "http://example.com/actors/actorsearch">
+	<input type ="text" name = "actorname" value=""/>
+	<input type ="submit"/>
+</form>
+</div >
+
+<div id="createresource">
+<h3> Create an Actor Resource </h3>
+<form  method = "post" action = "http://example.com/movie-trailers">
+<input type="text" name="actorname" value=""/> <br>
+<input type="text" name="bio" value=""/> <br>
+<input type="text" name="moviesactedinID" value=""/> <br>
+<input type="Submit"/>
+</form>
+</div>
+
+<div id="updateresource">
+<h3> Update an Actor Resource </h3>
+<form method = "post" action = "http://example.com/movie-trailers">
+<input type="text" name="actorname" value=""/> <br>
+<input type="text" name="bio" value=""/> <br>
+<input type="text" name="moviesactedinID" value=""/> <br>
+<input type="Submit"/>
+</form>
+</div>
+
+<ul id="see-otherallactors">
+<li><a rel="index" href="http://www.example.com/movie-trailers"> All Movie-Trailers </a></li>
+<li><a href="http://www.example.com/subjects"> All Subjects </a></li>
+</ul>
+</body>
+</html>
+
+
