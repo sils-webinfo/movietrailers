@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> All Movie-Trailers Example </title>
+<!-- This is the entry point -->
+</head>
+
+<body>
+
+<h1> A List of all Movies </h1>
+
+
+<ul class="movie-list">
+<!-- A list of links to individual movie-trailer pages would be listed here -->
+<li> <a href="http://www.example.com/movie-trailers/{movie-id}"> Lion King </a></li>
+<li> <a href="http://www.example.com/movie-trailers/{movie-id}"> Alladin </a></li>
+<li> <a href="http://www.example.com/movie-trailers/{movie-id}"> Beauty and the Beast </a></li>
+<li> <a href="http://www.example.com/movie-trailers/{movie-id}"> Mulan</a></li>
+<li> <a href="http://www.example.com/movie-trailers/{movie-id}"> Cinderella </a></li>
+<li> <a href="http://www.example.com/movie-trailers/{movie-id}"> Toy Story </a></li>
+</ul>
+
+<div id="queries" >
+<h3> Search for a Movie-Trailer by Title </h3>
+<form method = "get" action = "http://example.com/movie-trailers/titlesearch">
+	<input type ="text" name = "titlename" value=""/>
+	<input type ="submit"/>
+</form>
+</div>
+
+<div id="createresource">
+<h3> Create a Movie Trailer Resource </h3>
+<form  method = "post" action = "http://example.com/movie-trailers">
+<input type="text" name="movietitle" value=""/> <br>
+<input type="text" name="movietrailerURL" value=""/> <br> <!-- This would be the youtube URL that  -->
+<input type="text" name="synopsis" value=""/> <br>
+<input type="text" name="actorid" value=""/> <br>
+<input type="text" name="subjectid" value=""/> <br>
+<input type="Submit"/>
+</form>
+</div>
+
+
+
+<div id="updateresource">
+<h3> Update a Movie Trailer Resource </h3>
+<form method = "post" action = "http://example.com/movie-trailers">
+<input type="text" name="movieid" value=""/> <br>
+<input type="text" name="movietitle" value=""/> <br>
+<input type="text" name="movietrailerURL" value=""/> <br>
+<input type="text" name="synopsis" value=""/> <br>
+<input type="text" name="actorid" value=""/> <br>
+<input type="text" name="subjectid" value=""/> <br>
+<input type="Submit"/>
+</form>
+</div>
+
+
+<ul id="see-otherallmovietrailers">
+<li><a href="http://www.example.com/actors"> All Actors </a></li>
+<li><a href="http://www.example.com/subjects"> All Subjects </a></li>
+</ul>
+</body>
+</html>
