@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> All Subjects Example </title>
+</head>
+
+<body>
+
+<h1> A List of all Subjects</h1>
+
+<ul class="subject-list">
+<li> <a href="http://www.example.com/subjects/{subject-id}"> Animation </a></li>
+<li> <a href="http://www.example.com/subjects/{subject-id}"> Sci-Fi</a></li>
+<li> <a href="http://www.example.com/subjects/{subject-id}"> Lion </a></li>
+<li> <a href="http://www.example.com/subjects/{subject-id}"> War </a></li>
+</ul>
+
+<div id="queries" >
+<h3> Search for a Subject by name </h3>
+<form method = "get" action = "http://example.com/subjects/subjectsearch">
+	<input type ="text" name = "subjectname" value=""/>
+	<input type ="submit"/>
+</form>
+</div >
+
+<div id="createresource">
+<h3> Create a Subject Resource </h3>
+<form  method = "post" action = "http://example.com/movie-trailers">
+<input type="text" name="subjectname" value=""/> <br>
+<input type="text" name="description" value=""/> <br>
+<input type="text" name="relatedmoviesID" value=""/> <br>
+<input type="Submit"/>
+</form>
+</div>
+
+<div id="updateresource">
+<h3> Update a Subject Resource </h3>
+<form  method = "post" action = "http://example.com/movie-trailers">
+<input type="text" name="subjectname" value=""/> <br>
+<input type="text" name="description" value=""/> <br>
+<input type="text" name="relatedmoviesID" value=""/> <br>
+<input type="Submit"/>
+</form>
+</div>
+
+
+
+
+<ul id="see-otherallsubjects">
+<li><a rel="index" href="http://www.example.com/movie-trailers"> All Movie-Trailers </a></li>
+<li><a href="http://www.example.com/actors"> All Actors </a></li>
+</ul>
+</body>
+</html>
+
+
