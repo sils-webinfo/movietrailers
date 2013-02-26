@@ -17,7 +17,7 @@ This page contains outbound links that will connect one back to the list pages f
 *subjects.html is an example how a particular subject page might look like. This page contains outbound links
 This page contains outbound links that will connect one back to the list pages for movie-trailers, actors, and subjects. (URI/subjects/subject/{subject-id})
 
-*timeresult.html is an example of how a page will look like if someone requests in the a particular time. It will look
+*timeresult.html is an example of how a page will look like if someone requests a particular time. It will look
 almost exactly the same as the movie-trailer individual page, except that the video will start at a specified time. URI (URI/movie-trailers/{movie-id}#t={ms })
 
 *titlesearchresults.html is an example of how the search results might look like if someone searches for a movie-trailer via the title. (URI/titlesearch?titlename={query})
@@ -67,6 +67,7 @@ Found in:
 See-otherallactors is an unordered list that contains links to the all-subjects page and all-movie-trailer page
 Found in:
 * all-actors page
+
 See-otherallsubjects is an unordered list that contains links to the all-actors page and all-movie-trailer page
 Found in:
 * all-subjects page
